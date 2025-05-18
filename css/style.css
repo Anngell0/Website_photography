@@ -21,23 +21,55 @@ body {
     background-color: #f8f8f8;
     padding: 100px 0;
     text-align: center;
+    position: relative;
 }
 
 .header-content {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
 }
 
-.main-text {
-    font-size: 24px;
+.site-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.site-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 1px;
+    background-color: #333;
+}
+
+.text-block {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.text-content {
+    font-size: 18px;
     margin-bottom: 30px;
     line-height: 1.8;
+    color: #333;
+    font-weight: 400;
 }
 
-.secondary-text {
-    font-size: 18px;
+.text-content:last-of-type {
     margin-bottom: 40px;
-    line-height: 1.6;
 }
 
 .gallery-btn {
@@ -79,7 +111,7 @@ body {
 }
 
 .about-text {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.8;
     max-width: 800px;
     margin: 0 auto;
@@ -131,15 +163,30 @@ body {
         grid-template-columns: 1fr;
     }
     
-    .main-text {
-        font-size: 20px;
+    .site-title {
+        font-size: 28px;
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+        font-weight: 500;
     }
     
-    .secondary-text {
+    .site-title:after {
+        width: 60px;
+        height: 2px;
+    }
+    
+    .text-content {
         font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+    
+    .text-content:last-of-type {
+        margin-bottom: 35px;
     }
     
     .about-text {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 1.6;
     }
 } 
