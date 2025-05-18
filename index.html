@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотограф - Портретная съемка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="text-block">
+                    <p class="main-text">
+                        Мы — не сломаны. Мы — незавершённые шедевры.<br>
+                        Кто-то прячется в винтажном шелке, кто-то — в сарказме.<br>
+                        Но мы все хотим одного: быть увиденными,<br>
+                        а не просто рассмотренными.
+                    </p>
+                    <p class="secondary-text">
+                        Я не обещаю тебе волшебную таблетку.<br>
+                        Здесь не будет розовых единорогов и "аффирмаций на холодильник".<br>
+                        Но будет работа. Твоя. Моя. Общая.<br>
+                        Честная, как тишина в комнате после ссоры.<br>
+                        Глубокая, как взгляд, в котором больше не нужно притворяться
+                    </p>
+                    <button class="gallery-btn" onclick="openGallery()">Посмотреть больше</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/photo1.jpg" alt="Фото 1"></div>
+                <div class="gallery-item"><img src="images/photo2.jpg" alt="Фото 2"></div>
+                <div class="gallery-item"><img src="images/photo3.jpg" alt="Фото 3"></div>
+                <div class="gallery-item"><img src="images/photo4.jpg" alt="Фото 4"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <p class="about-text">
+                Ты можешь прийти с вопросом,<br>
+                а уйти — с собой. Настоящей.<br>
+                Без масок. Без «надо быть удобной».<br>
+                Без страха быть слишком.<br>
+                <br>
+                Ты — не слишком. Ты — в точку.
+            </p>
+        </div>
+    </section>
+
+    <section class="booking">
+        <div class="container">
+            <form id="bookingForm" class="booking-form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Номер телефона" required>
+                <textarea name="request" placeholder="Опишите вашу идею для съемки" required></textarea>
+                <button type="submit">Записаться</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
